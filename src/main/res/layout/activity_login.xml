@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/font"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".vistas.Login">
+    <TextView
+        android:id="@+id/Titulo"
+        style="@style/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:text="@string/txt_title_login" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="401dp"
+        android:layout_height="145dp"
+        android:layout_below="@+id/Titulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+
+        app:srcCompat="@drawable/fvector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/txtNombre"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:gravity="center_horizontal"
+            android:hint="Nombre y apellidos"
+            android:textSize="20dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:hint="Correo electronico"
+            android:textSize="20dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/txtContraseña"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:hint="Contraseña"
+            android:textSize="20dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/chilanka"
+            android:gravity="center_horizontal"
+            android:text="Género:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        //opciones de genero
+
+        <RadioGroup
+            android:id="@+id/opGenero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/Masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="center_horizontal"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/Femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="center_horizontal"
+                android:text="Femenino" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_1"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_guardar"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

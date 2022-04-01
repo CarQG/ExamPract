@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InicioPrac</string>
+    <string name="txt_title_login">"Registro"</string>
+    <string name="txt_guardar">"Guardar Datos"</string>
+</resources>
